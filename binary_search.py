@@ -128,11 +128,11 @@ def find_larger(xs, x):
     '''
     def go(left, right):
         # base case
-        if xs[left] == x and xs[left-1] > x:
+        if xs[left] == x and xs[left - 1] > x:
             return left
         if xs[left] == x and left == 0:
             return left
-        if xs[right] == x and xs[right-1] > x:
+        if xs[right] == x and xs[right - 1] > x:
             return right
         if left == right:
             return None
